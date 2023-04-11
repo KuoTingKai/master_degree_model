@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="{{ url_for('static',  filename='favicon.ico') }}">
+    <title>上傳影像檔</title>
+  </head>
+    <body>
+    <h1>老鼠疼痛模型判斷</h1>
+    <h2>上傳影像檔</h2>
+    <form method="POST" enctype="multipart/form-data" action="/">
+      <div>
+      <input type="file" name="img_name" accept=".png" multiple="">
+      <input type="submit" name="submit_name" value="image_upload">
+      </div>
+      <h2>上傳影片檔</h2>
+      <div>
+      <input type="file" name="viedo_name" accept=".avi">
+      <input type="submit" name="submit_name" value="video_upload">
+      </div> 
+    </form>
+
+    <!-- <h2>上傳影片檔</h2>
+    <form method="POST" enctype="multipart/form-data" action="/">
+      <input type="file" name="viedo_name" accept=".avi">
+      <input type="submit" value="video_upload">
+    </form> -->
+    </body>
+</html>
